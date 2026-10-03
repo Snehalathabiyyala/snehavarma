@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snehalatha Biyyala | Data Analyst & Data Scientist</title>
+  <meta name="description" content="Portfolio of Snehalatha Biyyala, Computer Science Graduate specializing in Data Analytics, Data Science, Machine Learning, and Predictive Modeling.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Snehalatha Biyyala | Data Analyst & Data Scientist Portfolio">
+  <meta property="og:description" content="Explore projects, skills, and education of Snehalatha Biyyala in Data Science and Machine Learning.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- FIXED NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Snehalatha Biyyala Home Page">
+        <span class="logo-box">SB</span>
+        <span class="logo-text">Snehalatha<span>.analytics</span></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#highlights" class="nav-link">Highlights</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/resume.pdf" class="btn btn-outline nav-btn" download target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span> Open to Data Analyst & Scientist Roles
+          </div>
+          <h1 class="hero-title">Snehalatha Biyyala</h1>
+          <p class="hero-subtitle">Data Analyst & Data Scientist</p>
+          <p class="hero-description">
+            Computer Science graduate specialized in statistical analysis, machine learning models, exploratory data analysis, and predictive healthcare systems.
+          </p>
+
+          <div class="hero-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Odela, Peddapalli, Telangana, India</span>
+            <span><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (2022 - 2026)</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-chart-line"></i> View Projects</a>
+            <a href="assets/resume.pdf" class="btn btn-outline" download target="_blank" rel="noopener"><i class="fa-solid fa-download"></i> Download Resume</a>
+            <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="mailto:snehalathabiyyala276@gmail.com" aria-label="Email Snehalatha Biyyala" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+917013029869" aria-label="Call Snehalatha Biyyala" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub Profile" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="console-box">
+            <div class="console-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="console-title">analytics_pipeline.py</span>
+            </div>
+            <pre class="console-body"><code><span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
+<span class="code-keyword">import</span> numpy <span class="code-keyword">as</span> np
+<span class="code-keyword">from</span> sklearn.model_selection <span class="code-keyword">import</span> train_test_split
+
+<span class="code-comment"># Executive Candidate Snapshot</span>
+candidate = {
+    <span class="code-string">"name"</span>: <span class="code-string">"Snehalatha Biyyala"</span>,
+    <span class="code-string">"degree"</span>: <span class="code-string">"B.Tech Computer Science"</span>,
+    <span class="code-string">"cgpa"</span>: <span class="code-number">8.91</span>,
+    <span class="code-string">"core_focus"</span>: [<span class="code-string">"Data Cleaning"</span>, <span class="code-string">"EDA"</span>, <span class="code-string">"Predictive Analytics"</span>],
+    <span class="code-string">"deep_learning"</span>: [<span class="code-string">"ResNet"</span>, <span class="code-string">"VGG16"</span>, <span class="code-string">"TensorFlow/Keras"</span>]
+}
+
+<span class="code-keyword">print</span>(f<span class="code-string">"Status: Ready to deliver data-driven solutions."</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3 class="about-heading">Professional Summary</h3>
+            <p class="about-text">
+              B.Tech Computer Science Engineering graduate with a strong foundation in Data Science, Data Analytics, and Machine Learning. Hands-on experience in Python, SQL, data analysis, and machine learning through healthcare and predictive analytics projects.
+            </p>
+            <p class="about-text">
+              Skilled in end-to-end data pipelines: data cleaning, exploratory data analysis (EDA), feature engineering, model evaluation, and deployment. Seeking an entry-level Data Analyst or Data Scientist role to apply analytical and technical skills to real-world data-driven challenges.
+            </p>
+          </div>
+
+          <div class="about-metrics">
+            <div class="metric-box">
+              <span class="metric-value">8.91</span>
+              <span class="metric-label">B.Tech CGPA / 10</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Class X Board Score</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">98.1%</span>
+              <span class="metric-label">Class XII MPC Score</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">5+</span>
+              <span class="metric-label">Certifications & Trainings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Expertise</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="skill-category">Programming Languages</h3>
+            <div class="tag-cloud">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3 class="skill-category">Data Science & Analytics</h3>
+            <div class="tag-cloud">
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Data Cleaning</span>
+              <span class="tech-tag">Exploratory Data Analysis (EDA)</span>
+              <span class="tech-tag">Statistical Analysis</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 class="skill-category">Data Visualization</h3>
+            <div class="tag-cloud">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">MS Excel</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="skill-category">Machine Learning & AI</h3>
+            <div class="tag-cloud">
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Keras</span>
+              <span class="tech-tag">Regression</span>
+              <span class="tech-tag">Classification</span>
+              <span class="tech-tag">Clustering</span>
+              <span class="tech-tag">Feature Engineering</span>
+              <span class="tech-tag">Model Evaluation</span>
+            </div>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <h3 class="skill-category">Databases</h3>
+            <div class="tag-cloud">
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h3 class="skill-category">Tools & Frameworks</h3>
+            <div class="tag-cloud">
+              <span class="tech-tag">Jupyter Notebook</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Key Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-wrapper">
+                <span class="project-year">2024</span>
+                <h3 class="project-title">Blood Group Detection Using Fingerprint Images</h3>
+              </div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+            </div>
+            
+            <p class="project-description">
+              Developed and evaluated deep learning architectures to non-invasively classify human blood groups (A, B, AB, O with Rh factor) directly from fingerprint ridge structures, providing a potential low-cost testing method for emergency diagnostic care.
+            </p>
+
+            <div class="project-highlights">
+              <ul>
+                <li>Built and trained deep learning models including <strong>LeNet, AlexNet, VGG16, and ResNet34</strong>.</li>
+                <li>Compared overall model performance using accuracy/loss curves and comprehensive evaluation metrics across multiple epoch configurations to identify <strong>ResNet</strong> as the optimal architecture.</li>
+                <li>Demonstrated a non-invasive, accessible alternative to traditional laboratory blood typing with healthcare applications.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow/Keras</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Jupyter Notebook</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-wrapper">
+                <span class="project-year">2024</span>
+                <h3 class="project-title">Intelligent Drug Interaction & Allergy Risk Prediction System</h3>
+              </div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+            </div>
+
+            <p class="project-description">
+              Engineered a full-stack predictive medical application combining real-time drug interaction API integration with machine learning risk modeling to assist users in identifying adverse drug-drug interactions and personal allergy risks.
+            </p>
+
+            <div class="project-highlights">
+              <ul>
+                <li>Developed a full-stack web application featuring a <strong>Flask backend</strong>, <strong>React frontend</strong>, and <strong>SQLite database</strong>.</li>
+                <li>Integrated external medical data via the <strong>RxNorm REST API</strong> to detect complex drug-drug interactions.</li>
+                <li>Implemented drug severity scoring and allergy conflict checks powered by a <strong>Logistic Regression model</strong> (Scikit-learn) to categorize overall patient risk as Safe, Moderate, or High.</li>
+                <li>Built an interactive dashboard for multi-medication input and automated risk assessments.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">REST API (RxNorm)</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Education Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">B.Tech - Computer Science Engineering</h3>
+                <span class="timeline-date">2022 – 2026</span>
+              </div>
+              <p class="timeline-institution">University College of Engineering and Technology for Women, KU Campus, Warangal</p>
+              <div class="timeline-badge">CGPA: 8.91 / 10</div>
+            </div>
+          </div>
+
+          <!-- Education Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Higher Secondary (MPC)</h3>
+                <span class="timeline-date">2020 – 2022</span>
+              </div>
+              <p class="timeline-institution">Shivani Junior College, Hanmakonda</p>
+              <div class="timeline-badge">Percentage: 98.1%</div>
+            </div>
+          </div>
+
+          <!-- Education Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Secondary Education (Class X)</h3>
+                <span class="timeline-date">2020</span>
+              </div>
+              <p class="timeline-institution">New Millennium Model School, Jammikunta</p>
+              <div class="timeline-badge">Percentage: 100%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & TRAINING SECTION -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Continuous Learning</span>
+          <h2 class="section-title">Certifications & Experience</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Data Science Training</h3>
+              <p class="cert-provider">United Way of Hyderabad</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Web Development Internship</h3>
+              <p class="cert-provider">Pantech E-Learning (2024)</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Python Programming</h3>
+              <p class="cert-provider">GeeksforGeeks (2023)</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-palette"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">UI/UX App Redesign Using Figma</h3>
+              <p class="cert-provider">NxtWave Workshop</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Web Development Internship</h3>
+              <p class="cert-provider">Internpe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS / HIGHLIGHTS SECTION -->
+    <section id="highlights" class="section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Recognition</span>
+          <h2 class="section-title">Academic & Problem-Solving Highlights</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="highlight-body">
+              <h3 class="highlight-title">Top Academic Distinction</h3>
+              <p class="highlight-text">
+                Achieved a perfect score of <strong>100% in Class X</strong> and <strong>98.1% in Higher Secondary (MPC)</strong>, consistently maintaining top academic performance through graduation (8.91 B.Tech CGPA).
+              </p>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-code-compare"></i></div>
+            <div class="highlight-body">
+              <h3 class="highlight-title">Algorithmic Problem Solving</h3>
+              <p class="highlight-text">
+                Actively practicing algorithmic problem-solving on <strong>LeetCode</strong> to continually enhance data structures knowledge, logic building, and computational efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Information</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3 class="contact-label">Email</h3>
+            <a href="mailto:snehalathabiyyala276@gmail.com" class="contact-link">snehalathabiyyala276@gmail.com</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3 class="contact-label">Phone</h3>
+            <a href="tel:+917013029869" class="contact-link">+91 7013029869</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3 class="contact-label">Location</h3>
+            <p class="contact-text">Odela, Peddapalli, Telangana, India</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <h3 class="contact-label">LinkedIn</h3>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">Connect on LinkedIn</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <h3 class="contact-label">GitHub</h3>
+            <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">View Repositories</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-box">SB</span>
+        <span class="footer-name">Snehalatha Biyyala</span>
+      </div>
+      <p class="footer-text">Data Analyst & Data Scientist | B.Tech CSE</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">&copy; <span id="current-year"></span> Snehalatha Biyyala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="index.js"></script>
+</body>
+</html>
